@@ -1,0 +1,340 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy", sans-serif;
+}
+
+@font-face {
+  font-family: "Gilroy", sans-serof;
+  src: local("Gilroy"), url("../fonts/Gilroy-Regular.ttf") format("truetype");
+}
+.container {
+  width: 1330px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+button {
+  cursor: pointer;
+}
+img {
+  max-width: 100%;
+}
+.tittle h2 {
+  font-weight: 400;
+  font-size: 38px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  text-align: center;
+  padding-top: 55px;
+}
+.tittle p {
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: rgba(0, 0, 0, 0.6);
+  padding-top: 25px;
+}
+/**HEADER**/
+header {
+  background-color: #f9f1f0;
+}
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.header__logo a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+.header__inner ul {
+  list-style: none;
+  display: flex;
+}
+.header__inner ul a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  color: #6f6f6f;
+  margin: 0 15px;
+}
+.hamburger img {
+  width: 20px;
+  height: 20px;
+}
+.hamburger {
+  display: none;
+}
+/**WELCOME**/
+.welcome {
+  background-color: #e3dcd6;
+  background-image: url("../img/welcome.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 580px;
+}
+.welcome__inner {
+  display: flex;
+  padding-top: 90px;
+  padding-left: 100px;
+}
+.welcome__left h1 {
+  font-weight: 500;
+  font-size: 30px;
+  letter-spacing: 0.05em;
+  color: #70616c;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.welcome__left h2 {
+  padding-top: 20px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 35px;
+  letter-spacing: 0.05em;
+  color: #70616c;
+  padding-bottom: 50px;
+  text-transform: uppercase;
+}
+.welcome__left p {
+  font-weight: 400;
+  font-size: 22px;
+  letter-spacing: 0.05em;
+  color: #70616c;
+}
+.last__p {
+  padding-top: 65px;
+}
+.welcome__left button {
+  font-weight: 400;
+  margin-top: 30px;
+  padding: 22px 48px;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  background-color: #d39999;
+  border-radius: 50px;
+  border: none;
+}
+
+/**WORK**/
+.work__items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 70px;
+}
+.work__item {
+  width: 180px;
+  min-height: 270px;
+}
+.work__item p {
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: #000000;
+  padding-top: 28px;
+}
+
+/**ABOUT**/
+.about__text {
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  padding-top: 68px;
+}
+.about {
+  background-image: url("../img/abot.png");
+  background-repeat: no-repeat;
+}
+.about__items {
+  display: flex;
+  padding-top: 80px;
+  align-items: center;
+  justify-content: center;
+}
+.about__items img {
+  margin: 0 30px;
+}
+/**PREIM**/
+.preim {
+  background-image: url("../img/test.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.preim__inner {
+  padding: 100px 0;
+}
+.preim__items {
+  padding-top: 95px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.preim__item {
+  display: flex;
+  align-items: center;
+  width: 270px;
+  margin: 10px 40px;
+}
+.preim__item p {
+  margin-left: 50px;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+
+/**PRICE**/
+.price__items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+.sale {
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  padding-top: 23px;
+  padding-bottom: 45px;
+}
+.cost {
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 44px;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+.cost__sale {
+  font-weight: 400;
+  font-size: 20px;
+  text-decoration: line-through;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+.desc {
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: rgba(0, 0, 0, 0.6);
+  padding-top: 25px;
+  padding-bottom: 60px;
+}
+.price__item {
+  text-align: center;
+  background-color: #f9f1f0;
+  border-radius: 15px;
+  padding: 10px 20px;
+  height: 350px;
+  width: 260px;
+  margin: 0 20px;
+}
+.price__item button {
+  font-weight: 400;
+  font-size: 18px;
+  padding: 23px 48px;
+  border-radius: 50px;
+  background-color: #d39999;
+  border: none;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+.what {
+  padding-top: 70px;
+}
+.what h4 {
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  padding-bottom: 30px;
+}
+.what ul li {
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  margin: 8px 0;
+}
+/**ZAPIS**/
+.zapis {
+  height: 432px;
+  margin-top: 110px;
+  background-image: url("../img//zapis.png");
+}
+.zapis__inner h5 {
+  font-weight: 400;
+  font-size: 38px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  padding-top: 83px;
+  padding-bottom: 60px;
+}
+.social {
+  padding-top: 25px;
+}
+.social a {
+  margin-right: 10px;
+}
+.contact {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+.contact a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  margin-left: 10px;
+}
+.recommend__inner {
+  padding: 130px 0;
+  text-align: center;
+}
+.recommend__inner p {
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+.recommend__inner button {
+  margin-top: 40px;
+  padding: 20px 60px;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  background-color: #d39999;
+  border-radius: 34px;
+  border: none;
+}
+
+/**FOOTER**/
+footer {
+  background-color: #e3dcd6;
+  text-align: center;
+  padding: 20px 0;
+}
+footer p {
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  color: rgba(0, 0, 0, 0.6);
+}

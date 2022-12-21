@@ -1,0 +1,162 @@
+@media only screen and (max-width: 1200px) {
+  .header__inner {
+    padding: 20px 10px;
+  }
+  .welcome__left {
+    padding-left: 70px;
+    color: white;
+  }
+  .welcome__left h1,
+  .welcome__left h2,
+  .welcome__left p {
+    color: white;
+  }
+  .work__items {
+    padding: 48px 15px 0 15px;
+  }
+  .work__item {
+    width: 160px;
+  }
+  .about__inner {
+    padding: 0 15px;
+  }
+  .preim__items {
+    padding: 95px 80px 0 80px;
+  }
+  .preim__item {
+    margin: 20px 40px;
+  }
+  .what {
+    padding: 70px 15px 0 40px;
+  }
+  .zapis__inner {
+    padding: 0 15px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .welcome__left {
+    padding-left: 0px;
+  }
+  .about__items img {
+    margin: 0 5px;
+  }
+  .price__item {
+    width: 210px;
+  }
+  .price__item button {
+    padding: 14px 29px;
+  }
+  .desc {
+    padding-bottom: 30px;
+  }
+  .cost {
+    font-size: 32px;
+  }
+  .work__item {
+    width: 135px;
+  }
+  .work__item p {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #000000;
+    padding-top: 24px;
+  }
+  .work__items {
+    padding: 48px 23px 0 23px;
+  }
+  .preim__items {
+    padding: 60px 0px 0 0px;
+  }
+  .recommend__inner p {
+    font-size: 23px;
+  }
+  .recommend__inner button {
+    padding: 15px 34px;
+  }
+  footer p {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header__nav {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .work__items {
+    flex-wrap: wrap;
+  }
+  .about__items {
+    flex-wrap: wrap;
+  }
+  .about__items img {
+    margin: 0 5px;
+    width: 30%;
+  }
+  .price__items {
+    flex-wrap: wrap;
+  }
+  .price__item {
+    margin: 10px 20px;
+  }
+  .recommend__inner {
+    padding: 100px 15px;
+  }
+  .work__items {
+    justify-content: center;
+  }
+  .work__item {
+    margin: 10px;
+    width: 120px;
+  }
+  .preim__items {
+    justify-content: center;
+  }
+  .welcome__inner {
+    display: flex;
+    padding-top: 90px;
+    padding-left: 27px;
+  }
+  .welcome {
+    background-position: center;
+  }
+  .welcome__left h2 {
+    padding-top: 0px;
+    padding-bottom: 18px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .welcome__left h1 {
+    font-size: 18px;
+  }
+  .welcome__left p {
+    font-size: 18px;
+  }
+  .work__item {
+    margin: 3px;
+  }
+  .tittle h2 {
+    font-size: 33px;
+  }
+  .tittle p {
+    font-size: 12px;
+  }
+  .about__items img {
+    margin: 5px 5px;
+    width: 46%;
+  }
+  .zapis__inner h5 {
+    font-size: 30px;
+  }
+  .zapis {
+    background-position: center;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+}
