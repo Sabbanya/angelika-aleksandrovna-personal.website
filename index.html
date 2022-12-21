@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/adaptive.css">
+    <link rel="stylesheet" href="css/animate.css">
     <title>Анжелика Александровна</title>
   </head>
   <body>
@@ -17,57 +18,89 @@
           </div>
           <div class="header__nav">
             <ul>
-              <li><a href="#">С чем я работаю</a></li>
-              <li><a href="#">Как я работаю</a></li>
-              <li><a href="#">Оплата</a></li>
-              <li><a href="#">Контакты</a></li>
+              <li><a href="#swap1">С чем я работаю</a></li>
+              <li><a href="#swap2">Обо мне</a></li>
+              <li><a href="#swap3">Цены</a></li>
+              <li onclick="open_window()"><a href="#">Контакты</a></li>
             </ul>
           </div>
-          <div class="hamburger">
+          <!--<div class="hamburger">
             <img src="img/hamburger.png" alt="">
-          </div>
+          </div>-->
         </div>
       </div>
     </header>
+    <section class="modal" id="modal">
+        <div class="modal__window">
+            <div class="modal__top">
+                <p>Запишитесь на консультацию или задайте вопрос</p>
+                <img src="img/close.png" alt="" onclick="close_window()">
+            </div>
+            <div class="modal__contacts">
+                <div class="modal__contact">
+                    <p>Написать в WhatsApp</p>  
+                    <a href="https://wa.me/79375279688"><img src="img/whatsapp2.png" alt=""></a>
+                </div>
+                <div class="modal__contact">
+                    <p>Написать в Telegram</p>
+                    <a href="https://t.me/+79375279688"><img src="img/telegram2.png" alt=""></a>
+                </div>
+                <div class="modal__contact">
+                    <p>Написать письмо</p>
+                    <div class="modal__contact__bot">
+                        <img src="img/email2.png" alt="">
+                        <a href="mailto:testtest@mail.ru">testtest@mail.ru</a>
+                    </div>
+                </div>
+                <div class="modal__contact">
+                    <p>Позвонить</p>
+                    <div class="modal__contact__bot">
+                        <img src="img/phone2.png" alt="">
+                        <a href="tel: +79375279688">+7 (937) 527-96-88</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="welcome">
         <div class="container">
             <div class="welcome__inner">
                 <div class="welcome__left">
-                    <h1>Меня зовут Анжелика</h1>
-                    <h2>Психолог онлайн</h2>
-                    <p>твоя новая жизнь без </br>невроза , тревог , обид.</p>
-                    <p class="last__p">Без консультаций годами!</p>
-                    <button>Записаться</button>
+                    <h1 class="wow fadeInLeft">Меня зовут Анжелика</h1>
+                    <h2 class="wow fadeInLeft" data-wow-delay="0.2s">Психолог онлайн</h2>
+                    <p class="wow fadeInLeft" data-wow-delay="0.4s">твоя новая жизнь без </br>невроза , тревог , обид.</p>
+                    <p class="last__p wow fadeInLeft" data-wow-delay="0.6s">Без консультаций годами!</p>
+                    <button onclick="open_window()" class="wow fadeInUp">Записаться</button>
                 </div>
                 
             </div>
         </div>
     </section>
-    <section class="work">
+    <section class="work" id="swap1">
         <div class="container">
             <div class="work__inner">
-                <div class="tittle">
+                <div class="tittle wow bounceInLeft">
                     <h2>С чем я работаю</h2>
                     <p>Знание разных методик дает мне возможность </br>работать с широким спектором проблем</p>
                 </div>
                 <div class="work__items">
-                    <div class="work__item">
+                    <div class="work__item wow flipInX" data-wow-delay="0.2s">
                         <img src="img/work1.png" alt="work1">
                         <p>Семейные трудности</p>
                     </div>
-                    <div class="work__item">
+                    <div class="work__item wow flipInX" data-wow-delay="0.4s">
                         <img src="img/work2.png" alt="work1">
                         <p>Сложности в отношениях</p>
                     </div>
-                    <div class="work__item">
+                    <div class="work__item wow flipInX" data-wow-delay="0.6s">
                         <img src="img/work3.png" alt="work1">
                         <p>Личностное развитие и самооценка</p>
                     </div>
-                    <div class="work__item">
+                    <div class="work__item wow flipInX" data-wow-delay="0.8s">
                         <img src="img/work4.png" alt="work1">
                         <p>Эмоциональные проблемы</p>
                     </div>
-                    <div class="work__item">
+                    <div class="work__item wow flipInX" data-wow-delay="1s">
                         <img src="img/work5.png" alt="work1">
                         <p>Профессиональное самоопределение</p>
                     </div>
@@ -75,10 +108,10 @@
             </div>
         </div>
     </section>
-    <section class="about">
+    <section class="about" id="swap2">
         <div class="container">
             <div class="about__inner">
-                <div class="tittle">
+                <div class="tittle wow bounceInRight">
                     <h2>
                         Обо мне и психотерапии
                     </h2>
@@ -86,7 +119,7 @@
                         Анжелика Александровна, психолог онлайн
                     </p>
                 </div>
-                <div class="about__text">
+                <div class="about__text wow fadeIn" data-wow-delay="0.5s">
                     Меня зовут Анжелика Александровна
 За плечами 2 года непрерывной практики, постоянных обучений, и супервизий (а также личной терапии)
 В моём багаже много техник для работы с самыми разными запросами, начиная от панических атак и страхов до серьезных заболеваний</br></br>
@@ -157,7 +190,7 @@
             </div>
         </div>
     </section>
-    <section class="price">
+    <section class="price" id="swap3">
         <div class="container">
             <div class="price__inner">
                 <div class="tittle">
@@ -166,7 +199,7 @@
                     </h2>
                 </div>
                 <div class="price__items">
-                    <div class="price__item">
+                    <div class="price__item wow fadeInLeft" data-wow-delay="0.2s">
                         <div class="sale">
                             Первичная
                         </div>
@@ -179,9 +212,9 @@
                         <div class="desc">
                             Онлайн сессия
                         </div>
-                        <button>Записаться</button>
+                        <button onclick="open_window()">Записаться</button>
                     </div>
-                    <div class="price__item">
+                    <div class="price__item wow fadeInUp" data-wow-delay="0.4s">
                         <div class="sale">
                             20% скидка
                         </div>
@@ -194,9 +227,9 @@
                         <div class="desc">
                             5 сессий
                         </div>
-                        <button>Записаться</button>
+                        <button onclick="open_window()">Записаться</button>
                     </div>
-                    <div class="price__item">
+                    <div class="price__item wow fadeInRight" data-wow-delay="0.6s">
                         <div class="sale">
                             20% скидка
                         </div>
@@ -209,7 +242,7 @@
                         <div class="desc">
                             10 сессий
                         </div>
-                        <button>Записаться</button>
+                        <button onclick="open_window()">Записаться</button>
                     </div>
                 </div>
                 <div class="what">
@@ -230,15 +263,15 @@
                 <h5>Запишитесь на консультацию или </br>задайте вопрос</h5>
                 <div class="contact">
                     <img src="img/phone.png" alt="">
-                    <a href="">+7 (937) 527-96-88</a>
+                    <a href="tel: +79375279688">+7 (937) 527-96-88</a>
                 </div>
                 <div class="contact">
                     <img src="img/email.png" alt="">
-                    <a href="">testtest@mail.ru</a>
+                    <a href="mailto:testtest@mail.ru">testtest@mail.ru</a>
                 </div>
                 <div class="social">
-                    <a href=""><img src="img/whatsapp.png" alt=""></a>
-                    <a href=""><img src="img/telegram.png" alt=""></a>
+                    <a href="https://wa.me/79375279688"><img src="img/whatsapp.png" alt=""></a>
+                    <a href="https://t.me/+79375279688"><img src="img/telegram.png" alt=""></a>
                 </div>
             </div>
         </div>
@@ -247,12 +280,18 @@
         <div class="container">
             <div class="recommend__inner">
                 <p>Совершенно новая жизнь всегда стоит в одном шаге от вас. </br>Маре Беттерсон</p>
-                <button>Записаться на консультацию</button>
+                <button onclick="open_window()">Записаться на консультацию</button>
             </div>
         </div>
     </section>
     <footer>
         <p>© 2022 Персональный сайт психолога Анжелики Александровна</br>Все права защищены</p>
     </footer>
+    <script src="js/js.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+  new WOW().init();
+  </script>
   </body>
+  
 </html>
